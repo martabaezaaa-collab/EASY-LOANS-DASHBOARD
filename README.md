@@ -12,7 +12,7 @@ Analizar operaciones, devoluciones y rendimiento por país.
 · Excel
 
 
-## KPIs
+###  KPIs
 · Volumen de préstamos
 · Ratio de devoluciones
 · Operaciones por país
