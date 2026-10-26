@@ -2,11 +2,11 @@
 Proyecto de análisis de préstamos y devoluciones.
 
 
-## Objetivo
+###  Objetivo
 Analizar operaciones, devoluciones y rendimiento por país.
 
 
-## Herramientas
+###  Herramientas
 · SQL 
 · Tableau
 · Excel
