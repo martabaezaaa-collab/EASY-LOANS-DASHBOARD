@@ -1,1 +1,1 @@
-# EASY-LOANS-DASHBOARD
+easy-loans-dashboard
