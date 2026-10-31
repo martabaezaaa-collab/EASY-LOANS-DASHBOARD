@@ -13,13 +13,19 @@ Academic project. The dataset belongs to a fictional consumer-finance company, "
 
 Three tables in Snowflake:
 
-Table	Content
-orders	Loan operations: id, date, status, amount, merchant, country
-merchants	Merchant id and name
-refunds	Refunds linked to orders: date and amount
-What I did
-1. SQL analysis (Snowflake)
-Operations by country and status: aggregations, filters by date, country and amount range, ordered by average amount.
+| Table | Content |
+|---|---|
+| `orders` | Loan operations: id, date, status, amount, merchant, country |
+| `merchants` | Merchant id and name |
+| `refunds` | Refunds linked to orders: date and amount |
+
+## What I did
+### 1. SQL analysis (Snowflake)
+#### - Operations by country and status: 
+- aggregations,
+- filters by date,
+- country and amount range,
+- ordered by average amount.
 Top 3 most active countries: total operations, max and min amounts, excluding delinquent and cancelled loans.
 Merchant performance: joins between orders, merchants and refunds; CASE WHEN to flag whether a merchant accepts refunds; HAVING to keep merchants with more than 10 sales.
 Consolidated view (easy_loans_view): one view combining orders, merchants and refund counts/amounts, exported to CSV as the source for Tableau.
