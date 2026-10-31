@@ -5,9 +5,9 @@ End-to-end analytics project. It covers the full data lifecycle: querying and mo
 Academic project. The dataset belongs to a fictional consumer-finance company, "Easy Loans", which provides point-of-sale loans through merchants across several European countries.
 
 ## Business questions
-· Which countries generate the most loan operations, and how does the average loan amount vary by country and status (active, closed, delinquent, cancelled)?
-· Which merchants drive the most operations, and which ones accept refunds?
-· Where are the risks (delinquency, cancellations) and where are the opportunities?
+- Which countries generate the most loan operations, and how does the average loan amount vary by country and status (active, closed, delinquent, cancelled)?
+- Which merchants drive the most operations, and which ones accept refunds?
+- Where are the risks (delinquency, cancellations) and where are the opportunities?
 
 ## Data
 
