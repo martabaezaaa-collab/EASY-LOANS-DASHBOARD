@@ -1,6 +1,6 @@
 # Easy Loans: Loan Portfolio Analysis (SQL + Tableau)
 
-End-to-end analytics project built as the final assignment of the Business Analytics & Big Data master's programme (UNED / NTIC Master). It covers the full data lifecycle: querying and modelling data in Snowflake, then turning it into an interactive Tableau dashboard with business recommendations.
+End-to-end analytics project. It covers the full data lifecycle: querying and modelling data in Snowflake, then turning it into an interactive Tableau dashboard with business recommendations.
 
 Academic project. The dataset belongs to a fictional consumer-finance company, "Easy Loans", which provides point-of-sale loans through merchants across several European countries.
 
