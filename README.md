@@ -30,7 +30,8 @@ Three tables in Snowflake:
   
 #### - Top 3 most active countries: 
 - total operations
-- max and min amounts, excluding delinquent and cancelled loans
+- max and min amounts
+- excluding delinquent and cancelled loans
   
   
 #### - Merchant performance: 
