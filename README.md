@@ -32,7 +32,7 @@ Consolidated view (easy_loans_view): one view combining orders, merchants and re
 
 Every query is accompanied by a short write-up: findings, business impact and recommendation (see the PDF report).
 
-2. Business Intelligence (Tableau)
+### 2. Business Intelligence (Tableau)
 Data model on the exported CSV, filtered to European operations.
 Calculated fields: average, max, min, total merchants, running sum (cumulative value), fixed average (FIXED LOD), total refunds.
 A parameter ("Minimum loan value") that filters every visualisation in the dashboard.
