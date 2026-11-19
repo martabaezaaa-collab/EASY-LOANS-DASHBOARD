@@ -23,8 +23,7 @@ Three tables in Snowflake:
 ### 1. SQL analysis (Snowflake)
 #### - Operations by country and status: 
 - aggregations
-- filters by date
-- country and amount range
+- filters by date, country and amount range
 - ordered by average amount
   
   
