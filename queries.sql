@@ -22,4 +22,25 @@ GROUP BY country
 ORDER BY Total_Transactions DESC
 LIMIT 3;
 
+-- Analysis of transactions and refunds by merchant
+SELECT o.country,
+m.name AS Merchant,
+m.merchant_id,
+COUNTo.(order_id) AS Total_Transactions,
+ROUND(AVG(o.amount), 2) AS Average_Amount,
+COUNT(r.order_id) AS Total_Refunds,
+  CASE
+  WHEN COUNT(r.order_id) > 0 THEN 'Sí'
+  ELSE 'No'
+  END AS Accepts_Refunds
+From Orders AS o
+JOIN Merchants AS m
+ON o.merchant_id = m.merchant_id
+LEFT JOIN Refunds AS r
+ON o.order_id = r.order_id
+WHERE o.country IN ('Marruecos', 'Italia', 'Espana', 'Portugal')
+GROUP BY m.name, m.merchant_id, o.country
+HAVING COUNT(o.order_id) > 10
+ORDER BY o.country, Total_Transactions DESC;
+
 
