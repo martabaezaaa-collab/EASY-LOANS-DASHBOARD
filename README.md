@@ -75,20 +75,6 @@ Three tables in Snowflake:
 - global filters (country, date range, minimum loan)
 - a map action that filters the other views
   
-#### - Key insights
 
-Replace these with the figures from your own results before publishing.
-
-Spain is the most active market by number of operations, but it also concentrates the largest number of loans with pending payments, so growth there should go together with delinquency control.
-Portugal has the lowest volume of operations, so it does not currently contribute much to the business.
-Activity differs a lot by merchant, which suggests focusing commercial efforts on the top-performing merchants and reviewing those with low activity or many refunds.
-Tools
-
-SQL · Snowflake · Tableau Desktop · Tableau Public
-
-Repository contents
-/sql         SQL queries for each exercise
-/tableau     Tableau workbook (.twbx)
-/report      Final report (PDF) with queries, reflections and dashboard screenshots
 
 
