@@ -47,7 +47,8 @@ Three tables in Snowflake:
 
 #### - Every query is accompanied by a short write-up: 
 - findings
-- business impact and recommendations
+- business impact
+- recommendations
 
   
   
