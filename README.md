@@ -34,8 +34,7 @@ Three tables in Snowflake:
   
   
 #### - Merchant performance: 
-- joins between orders
-- merchants and refunds
+- joins between orders, merchants and refunds
 - CASE WHEN to flag whether a merchant accepts refunds
 - HAVING to keep merchants with more than 10 sales
   
