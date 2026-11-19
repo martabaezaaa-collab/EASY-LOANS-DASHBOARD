@@ -43,4 +43,29 @@ GROUP BY m.name, m.merchant_id, o.country
 HAVING COUNT(o.order_id) > 10
 ORDER BY o.country, Total_Transactions DESC;
 
+-- Data consolidation into a view
+CREATE OR REPLACE VIEW easy_loans_view AS
+SELECT o.order_id,
+o.created_at,
+o.status,
+o.amount,
+o.merchant_id,
+o.country,
+m.name AS Merchant,
+COUNT(r.order_id) AS Total_Refunds,
+COALESCE (SUM(r.amount),0) AS Total_Amount_Refunds
+FROM Orders AS o
+LEFT JOIN Merchants AS m
+ON o.merchant_id = m.merchant_id
+LEFT JOIN Refunds AS r
+ON o.order_id = r.order_id
+GROUP BY o.order_id,
+o.created_at,
+o.status,
+o.amount,
+o.merchant_id,
+o.country,
+m.name;
+
+
 
