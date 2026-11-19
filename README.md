@@ -22,23 +22,60 @@ Three tables in Snowflake:
 ## What I did
 ### 1. SQL analysis (Snowflake)
 #### - Operations by country and status: 
-- aggregations,
-- filters by date,
-- country and amount range,
-- ordered by average amount.
-Top 3 most active countries: total operations, max and min amounts, excluding delinquent and cancelled loans.
-Merchant performance: joins between orders, merchants and refunds; CASE WHEN to flag whether a merchant accepts refunds; HAVING to keep merchants with more than 10 sales.
-Consolidated view (easy_loans_view): one view combining orders, merchants and refund counts/amounts, exported to CSV as the source for Tableau.
+- aggregations
+- filters by date
+- country and amount range
+- ordered by average amount
+  
+  
+#### - Top 3 most active countries: 
+- total operations
+- max and min amounts, excluding delinquent and cancelled loans
+  
+  
+#### - Merchant performance: 
+- joins between orders
+- merchants and refunds
+- CASE WHEN to flag whether a merchant accepts refunds
+- HAVING to keep merchants with more than 10 sales
+  
+  
+#### - Consolidated view (easy_loans_view): 
+- one view combining orders
+- merchants and refund counts/amounts
+- exported to CSV as the source for Tableau
+  
 
-Every query is accompanied by a short write-up: findings, business impact and recommendation (see the PDF report).
+#### - Every query is accompanied by a short write-up: 
+- findings
+- business impact and recommendations
+
+  
+  
+  
 
 ### 2. Business Intelligence (Tableau)
-Data model on the exported CSV, filtered to European operations.
-Calculated fields: average, max, min, total merchants, running sum (cumulative value), fixed average (FIXED LOD), total refunds.
-A parameter ("Minimum loan value") that filters every visualisation in the dashboard.
-Visualisations: KPI table, country map coloured by average loan, cumulative area chart by day and country, and a deviation view (above/below average).
-Dashboard interactions: global filters (country, date range, minimum loan) and a map action that filters the other views.
-Key insights
+#### - Data model on the exported CSV, filtered to European operations
+
+#### - Calculated fields: 
+- average, max, min, total merchants
+- running sum (cumulative value)
+- fixed average (FIXED LOD)
+- total refunds
+
+#### - A parameter ("Minimum loan value") that filters every visualisation in the dashboard.
+
+#### - Visualisations: 
+- KPI table
+- country map coloured by average loan
+- cumulative area chart by day and country
+- a deviation view (above/below average)
+
+#### - Dashboard interactions: 
+- global filters (country, date range, minimum loan)
+- a map action that filters the other views
+  
+#### - Key insights
 
 Replace these with the figures from your own results before publishing.
 
@@ -53,9 +90,5 @@ Repository contents
 /sql         SQL queries for each exercise
 /tableau     Tableau workbook (.twbx)
 /report      Final report (PDF) with queries, reflections and dashboard screenshots
-Links
-Interactive dashboard: add your Tableau Public link here
-Full report: see /report
-Author
 
-Your Name · LinkedIn · your.email@example.com
+
