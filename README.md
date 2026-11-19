@@ -40,8 +40,7 @@ Three tables in Snowflake:
   
   
 #### - Consolidated view (easy_loans_view): 
-- one view combining orders
-- merchants and refund counts/amounts
+- one view combining orders, merchants and refunds
 - exported to CSV as the source for Tableau
   
 
