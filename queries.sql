@@ -1,3 +1,8 @@
+-- Set the working context
+USE WAREHOUSE BADGER_WH;
+USE DATABASE MASTER_UNED;
+USE SCHEMA EASY_LOANS;
+
 -- Operations analysis by country and state
 SELECT COUNT(order_id) AS Total_Transactions,
 ROUND(AVG(amount), 2) AS Average_Amount,
