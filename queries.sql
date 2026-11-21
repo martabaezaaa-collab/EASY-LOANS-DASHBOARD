@@ -31,7 +31,7 @@ LIMIT 3;
 SELECT o.country,
 m.name AS Merchant,
 m.merchant_id,
-COUNTo.(order_id) AS Total_Transactions,
+COUNT(o.order_id) AS Total_Transactions,
 ROUND(AVG(o.amount), 2) AS Average_Amount,
 COUNT(r.order_id) AS Total_Refunds,
   CASE
